@@ -1,0 +1,5 @@
+-- See Table: vending_machine_sales
+USE vending_machine;
+SELECT *
+FROM vending_machine_sales;
+
