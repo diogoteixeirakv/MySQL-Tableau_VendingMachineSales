@@ -1,4 +1,4 @@
--- NUM PRODUCT BY CATEGORY - All Machines  --
+-- NUMBER SOLD PRODUCTS BY CATEGORY - All Machines  --
 SELECT category, count(*) as num_products
 FROM vending_machine.vending_machine_sales
 GROUP BY category -- carbonated=1639, non carbonated=710, food=3427, water=483
@@ -7,7 +7,7 @@ ORDER BY num_products DESC
 -- ^^ ANALYZE GuttenPlans x1367 ^^ --
 SELECT count(*)
 FROM vending_machine.vending_machine_sales
-WHERE machine="GuttenPlans x1367" -- No products sold:2524
+WHERE machine="GuttenPlans x1367" -- No. sold products: 2524
 
 SELECT category, count(*) as num_products
 FROM vending_machine.vending_machine_sales
@@ -18,7 +18,7 @@ GROUP BY category -- carbonated=1096, non carbonate=226, food=1202
 -- ^^ ANALYZE EB Public Library x1380 ^^ --
 SELECT count(*)
 FROM vending_machine.vending_machine_sales
-WHERE machine="EB Public Library x1380" -- No products sold: 1833
+WHERE machine="EB Public Library x1380" -- No. sold products: 1833
 
 SELECT category, count(*) as num_products
 FROM vending_machine.vending_machine_sales
@@ -29,7 +29,7 @@ GROUP BY category -- water=183, carbonated=279, non carbonate=275, food=1096
 -- ^^ ANALYZE BSQ Mall x1366 - ATT ^^ --
 SELECT count(*)
 FROM vending_machine.vending_machine_sales
-WHERE machine="BSQ Mall x1366 - ATT" -- No products sold: 512  
+WHERE machine="BSQ Mall x1366 - ATT" -- No. sold products:: 512  
 
 SELECT category, count(*) as num_products
 FROM vending_machine.vending_machine_sales
@@ -40,7 +40,7 @@ GROUP BY category -- water=105, carbonated=106, non carbonate=82, food=219
 -- ^^ ANALYZE BSQ Mall x1364 - Zales ^^ --
 SELECT count(*)
 FROM vending_machine.vending_machine_sales
-WHERE machine="BSQ Mall x1364 - Zales" -- No products sold: 714
+WHERE machine="BSQ Mall x1364 - Zales" -- No. sold products: 714
 
 SELECT category, count(*) as num_products
 FROM vending_machine.vending_machine_sales
@@ -51,7 +51,7 @@ GROUP BY category -- water=181, carbonated=115, non carbonate=99, food=319
 -- ^^ ANALYZE Earle Asphalt x1371 ^^ --
 SELECT count(*)
 FROM vending_machine.vending_machine_sales
-WHERE machine="Earle Asphalt x1371" -- No products sold: 676 
+WHERE machine="Earle Asphalt x1371" -- No. sold products: 676 
 
 SELECT category, count(*) as num_products
 FROM vending_machine.vending_machine_sales
